@@ -1,7 +1,9 @@
 {{>layout/header}}
-<h1>Kheeyoung's Portfolio</h1>
 <!--기본 정보 표-->
 <table>
+    <tr>
+        <th scope="col" colspan="3"> <h1>Kheeyoung's Portfolio</h1> </th>
+    </tr>
     <tr>
         <th scope="col"> 이름 </th>
         <th scope="col"> 김희영 </th>
@@ -51,7 +53,20 @@
         <th scope="col"> 자기소개서 </th>
     </tr>
 
+    {{#introduction}}
+        <tr>
+            <th scope="col" colspan="4"> {{title}} </th>
+        </tr>
+        <tr>
+            <th scope="col" colspan="4"> {{txt}} </th>
+        </tr>
+    {{/introduction}}
+
+
 </table>
+
+
+
 
 
 

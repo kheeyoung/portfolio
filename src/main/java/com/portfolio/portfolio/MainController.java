@@ -9,11 +9,18 @@ import lombok.extern.slf4j.Slf4j;
 @Slf4j
 @Controller
 public class MainController {
-    PublicMethod pm = new PublicMethod();
+    private final PublicMethod pm;
+
+    // 생성자 주입
+    public MainController(PublicMethod pm) {
+        this.pm = pm;
+    }
+
     @GetMapping("/main") // URL 매핑
     public String showMainPage(Model model) {
         String nextPage = "main_page";
-        model.addAttribute("now", pm.getNowTime());
+        System.out.println(pm.getHeaderImg());
+        model.addAttribute("headerImg", pm.getHeaderImg());
         return nextPage;
     }
 

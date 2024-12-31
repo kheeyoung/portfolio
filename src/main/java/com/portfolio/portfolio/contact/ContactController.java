@@ -5,13 +5,21 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 
+
 @Controller
 public class ContactController {
-    PublicMethod pm = new PublicMethod();
+    private final PublicMethod pm;
+
+    // 생성자 주입
+    public ContactController(PublicMethod pm) {
+        this.pm = pm;
+    }
+
+
     @GetMapping("/contact") // URL 매핑
-    public String showResumePage(Model model) {
+    public String showContactPage(Model model) {
         String nextPage = "contact";
-        model.addAttribute("now", pm.getNowTime());
+        model.addAttribute("headerImg", pm.getHeaderImg());
         return nextPage;
     }
 }
