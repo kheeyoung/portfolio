@@ -20,6 +20,7 @@ public class ContactController {
     public String showContactPage(Model model) {
         String nextPage = "contact";
         model.addAttribute("headerImg", pm.getHeaderImg());
+        model.addAttribute("profileImg", pm.getProfileImg());
         return nextPage;
     }
 }

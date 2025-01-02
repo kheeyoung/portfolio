@@ -10,29 +10,53 @@
 <body>
 <!--상단 바-->
 <div class="top_bar">
-    <div class="login">
-        <button>login</button>
-    </div>
-    <div>
-        <img class="header_img" src="{{headerImg}}">
+
+    <div class="header-crop"  >
+        <img class="header-img" src="https://lh3.googleusercontent.com/d/{{headerImg}}?authuser=0">
     </div>
 
 </div>
-<!--측면 바-->
+
 <div class="body_div">
 
-    <div class="side_bar_div">
-        <a href="../main" class="anchor">Menu</a>
-        <ul class="side_bar_list">
-            <li><a href="../resume" class="anchor">Resume</a></li>
-            <li><a href="../project" class="anchor">Project</a></li>
-            <li><a href="../contact" class="anchor">Contact Me</a></li>
-        </ul>
+
+
+
+
+        <!--메뉴-->
+        <div class="menu">
+            <table class="menu-table" bgcolor="#000000">
+                <tr>
+                    <th scope="col" class="menu-table-th" onclick="location.href='../main'"> <h3 class="menu-txt">Main</h3> </th>
+                    <th scope="col" class="menu-table-th" onclick="location.href='../resume'"> <h3 class="menu-txt">Resume</h3> </th>
+                    <th scope="col" class="menu-table-th" onclick="location.href='../project'"> <h3 class="menu-txt">Project</h3> </th>
+                    <th scope="col" class="menu-table-th" onclick="location.href='../contact'"> <h3 class="menu-txt">Contact Me!</h3> </th>
+                </tr>
+            </table>
+        </div>
+
+
+        <!--기본 프로필-->
+    <div class="basic-profile_div">
+            <table class="basic-profile">
+                <tr>
+                    <th>
+                        <img class="Profile-img" src="https://lh3.googleusercontent.com/d/{{profileImg}}?authuser=0">
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <h3>Kheeyoung</h3>
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        2001.01.03
+                    </th>
+                </tr>
+            </table>
     </div>
     <div class="inline_div">
-
-
-
 
 
 

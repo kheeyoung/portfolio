@@ -19,6 +19,7 @@ public class ProjectController {
     public String showProjectPage(Model model) {
         String nextPage = "project";
         model.addAttribute("headerImg", pm.getHeaderImg());
+        model.addAttribute("profileImg", pm.getProfileImg());
         return nextPage;
     }
 }

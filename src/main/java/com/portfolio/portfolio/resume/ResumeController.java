@@ -26,6 +26,7 @@ public class ResumeController {
         String nextPage = "resume";
 
         model.addAttribute("headerImg", pm.getHeaderImg());
+        model.addAttribute("profileImg", pm.getProfileImg());
         model.addAttribute("introduction", rs.getIntro());
         return nextPage;
     }

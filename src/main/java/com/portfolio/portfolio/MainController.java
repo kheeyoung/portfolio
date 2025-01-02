@@ -19,8 +19,8 @@ public class MainController {
     @GetMapping("/main") // URL 매핑
     public String showMainPage(Model model) {
         String nextPage = "main_page";
-        System.out.println(pm.getHeaderImg());
         model.addAttribute("headerImg", pm.getHeaderImg());
+        model.addAttribute("profileImg", pm.getProfileImg());
         return nextPage;
     }
 

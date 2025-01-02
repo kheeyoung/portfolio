@@ -1,11 +1,15 @@
 table {
     margin-left:auto;
     margin-right:auto;
-  width :80%;
-  height : 100%;
+
 }
 th, td {
   text-align: left;
+}
+
+.profile{
+    width :50%;
+    height : 80%;
 }
 
 .profile_th{
@@ -14,4 +18,24 @@ th, td {
 .profile_img{
     width="180";
     height="240";
+}
+
+.menu-table{
+    width : 100%;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-left:auto;
+    margin-right:auto;
+
+}
+
+.menu-table-th{
+    padding-right: 20px;
+    padding-left: 20px;
+    text-align: center;
+
+}
+
+.basic-profile{
+display: inline-block;
 }

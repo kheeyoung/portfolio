@@ -31,4 +31,14 @@ public class PublicMethod {
             throw new RuntimeException(e);
         }
     }
+
+    public String getProfileImg() {
+        try {
+            return db.getProfileImg();
+        } catch (ExecutionException e) {
+            throw new RuntimeException(e);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+    }
 }
