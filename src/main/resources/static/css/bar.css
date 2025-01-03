@@ -6,19 +6,17 @@ html, body {
 
 .body_div{
     margin: auto;
-    width: 60vh;
+    width: 60%;
 
 }
 .basic-profile_div{
     height: 100%
-    width: 20%;
-    display: inline-block;
+    width: 10%;
+    display: flex;
+
+
 }
-.inline_div{
-    height:100%:
-    width: 60%;
-    display: inline-block;
-}
+
 
 
 .header-crop{

@@ -1,3 +1,28 @@
 {{>layout/header}}
-project page
+<table class="body-contents">
+    <tr>
+        <th>Web</th>
+    </tr>
+    {{#Web}}
+        <tr>
+            <th>프로젝트 명</th>
+            <th>{{title}}</th>
+        </tr>
+        <tr>
+            <th>요약</th>
+            <th>{{contents}}</th>
+        </tr>
+        <tr>
+            <th>code</th>
+            <th><a href="{{url}}">GitHub</a> </th>
+        </tr>
+    {{/Web}}
+
+    <tr>
+        <th>App</th>
+    </tr>
+    <tr>
+        <th>AI</th>
+    </tr>
+</table>
 {{>layout/footer}}

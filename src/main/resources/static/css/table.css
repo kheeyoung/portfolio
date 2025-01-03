@@ -7,8 +7,8 @@ th, td {
   text-align: left;
 }
 
-.profile{
-    width :50%;
+.body-contents{
+    width :80%;
     height : 80%;
 }
 
@@ -38,4 +38,5 @@ th, td {
 
 .basic-profile{
 display: inline-block;
+width : 10%;
 }
