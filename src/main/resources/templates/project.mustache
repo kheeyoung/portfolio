@@ -5,24 +5,49 @@
     </tr>
     {{#Web}}
         <tr>
-            <th>프로젝트 명</th>
-            <th>{{title}}</th>
+            <td colspan="2"><h3>{{title}}</h3></td>
         </tr>
         <tr>
             <th>요약</th>
-            <th>{{contents}}</th>
+            <td>{{contents}}</td>
         </tr>
         <tr>
             <th>code</th>
-            <th><a href="{{url}}">GitHub</a> </th>
+            <td><a href="{{url}}">GitHub</a> </td>
         </tr>
     {{/Web}}
 
     <tr>
         <th>App</th>
+    {{#App}}
+        <tr>
+            <td colspan="2"><h3>{{title}}</h3></td>
+        </tr>
+        <tr>
+            <th>요약</th>
+            <td>{{contents}}</td>
+        </tr>
+        <tr>
+            <th>code</th>
+            <td><a href="{{url}}">GitHub</a> </td>
+        </tr>
+    {{/App}}
     </tr>
     <tr>
-        <th>AI</th>
+        <th>Etc</th>
+    {{#Etc}}
+        <tr>
+            <td colspan="2"><h3>{{title}}</h3></td>
+        </tr>
+        <tr>
+            <th>요약</th>
+            <td>{{contents}}</td>
+        </tr>
+        <tr>
+            <th>code</th>
+            <td><a href="{{url}}">GitHub</a> </td>
+        </tr>
+    {{/Etc}}
     </tr>
 </table>
 {{>layout/footer}}

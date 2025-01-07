@@ -25,6 +25,8 @@ public class ProjectController {
         model.addAttribute("headerImg", pm.getHeaderImg());
         model.addAttribute("profileImg", pm.getProfileImg());
         model.addAttribute("Web", ps.getWeb());
+        model.addAttribute("App", ps.getApp());
+        model.addAttribute("Etc", ps.getEtc());
         return nextPage;
     }
 }

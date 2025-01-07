@@ -56,4 +56,36 @@ public class DB {
         }
         return result;
     }
+
+    //app 프로젝트 가져오기
+    public List<ProjectDTO> getAppProject()throws ExecutionException, InterruptedException {
+        ArrayList<ProjectDTO> result = new ArrayList<>();
+
+        Iterable<CollectionReference> collections = FirestoreClient.getFirestore().collection("project").document("app").listCollections();
+
+        for (CollectionReference collection : collections) {
+
+            for (QueryDocumentSnapshot document : collection.get().get().getDocuments()) {
+                ProjectDTO pd = new ProjectDTO(document.get("title").toString(), document.get("contents").toString(), document.get("url").toString());
+                result.add(pd);
+            }
+        }
+        return result;
+    }
+
+    //etc 프로젝트 가져오기
+    public List<ProjectDTO> getEtcProject()throws ExecutionException, InterruptedException {
+        ArrayList<ProjectDTO> result = new ArrayList<>();
+
+        Iterable<CollectionReference> collections = FirestoreClient.getFirestore().collection("project").document("ETC").listCollections();
+
+        for (CollectionReference collection : collections) {
+
+            for (QueryDocumentSnapshot document : collection.get().get().getDocuments()) {
+                ProjectDTO pd = new ProjectDTO(document.get("title").toString(), document.get("contents").toString(), document.get("url").toString());
+                result.add(pd);
+            }
+        }
+        return result;
+    }
 }

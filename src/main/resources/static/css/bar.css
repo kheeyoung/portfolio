@@ -3,16 +3,40 @@ html, body {
     height: 100%;
     width: 100%
 }
-
 .body_div{
-    margin: auto;
-    width: 60%;
+    margin:auto;
+    width: 100%; /* 부모 div의 전체 너비 */
+    height: auto; /* 부모 div의 전체 높이 */
+    box-sizing: border-box; /* 패딩과 보더 포함 크기 계산 */
+    max-width: 1000px; /* 최대 너비 1000px */
+    min-width: 200px; /* 최소 너비 200px */
+
+}
+.inner_body_div{
+    margin:auto;
+    display: flex; /* 자식 요소들을 가로로 나란히 배치 */
+    justify-content: center; /* 가로로 자식 요소들을 가운데 정렬 */
+    align-items: flex-start; /* 세로로 자식 요소들을 상단 정렬 */
+    width: 100%; /* 부모 div의 전체 너비 */
+    justify-content: center;
+    box-sizing: border-box; /* 패딩과 보더 포함 크기 계산 */
+    max-width: 1000px; /* 최대 너비 1000px */
+    min-width: 200px; /* 최소 너비 200px */
 
 }
 .basic-profile_div{
-    height: 100%
-    width: 10%;
-    display: flex;
+    flex: 0 0 20%; /* 부모의 너비의 20% */
+    box-sizing: border-box; /* 패딩과 보더 포함 크기 계산 */
+
+    max-width: 200px; /* 최대 너비 200px */
+    min-width: 100px; /* 최소 너비 200px */
+
+
+}
+.contents_div{
+    flex: 0 0 80%; /* 부모의 너비의 80% */
+    height: 100%; /* 부모의 높이에 맞춤 */
+    box-sizing: border-box; /* 패딩과 보더 포함 크기 계산 */
 
 
 }
@@ -21,18 +45,19 @@ html, body {
 
 .header-crop{
     width:100%;
-    height:40vh;
+    height:20vh;
     overflow:hidden;
     margin:0 auto;
 }
 .header-img{
     width:100%;
-    height:100%;
+    height:300px;
     object-fit:cover;
 }
 
 .menu{
     margin: auto;
+    width:100%;
 
 }
 

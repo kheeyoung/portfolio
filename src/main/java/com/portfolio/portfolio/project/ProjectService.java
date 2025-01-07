@@ -13,4 +13,12 @@ public class ProjectService {
     List<ProjectDTO> getWeb() throws ExecutionException, InterruptedException {
         return db.getWebProject();
     }
+
+    List<ProjectDTO> getApp() throws ExecutionException, InterruptedException {
+        return db.getAppProject();
+    }
+
+    List<ProjectDTO> getEtc() throws ExecutionException, InterruptedException {
+        return db.getEtcProject();
+    }
 }
