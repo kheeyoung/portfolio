@@ -1,53 +1,61 @@
 {{>layout/header}}
 <table class="body-contents">
     <tr>
-        <th>Web</th>
+        <th><h1>Web</h1></th>
     </tr>
-    {{#Web}}
-        <tr>
-            <td colspan="2"><h3>{{title}}</h3></td>
-        </tr>
-        <tr>
-            <th>요약</th>
-            <td>{{contents}}</td>
-        </tr>
-        <tr>
-            <th>code</th>
-            <td><a href="{{url}}">GitHub</a> </td>
-        </tr>
-    {{/Web}}
 
     <tr>
-        <th>App</th>
-    {{#App}}
-        <tr>
-            <td colspan="2"><h3>{{title}}</h3></td>
-        </tr>
-        <tr>
-            <th>요약</th>
-            <td>{{contents}}</td>
-        </tr>
-        <tr>
-            <th>code</th>
-            <td><a href="{{url}}">GitHub</a> </td>
-        </tr>
-    {{/App}}
+        <td colspan="2">
+            <div class="projectDiv">
+                {{#Web}}
+                    <a href="{{url}}">
+                        <div class="projectDiv-inner">
+                            <h2>{{title}}</h2>
+                            <h5>{{contents}}</h5>
+                        </div>
+                    </a>
+                {{/Web}}
+            </div>
+        </td>
+    </tr>
+
+
+
+    <tr>
+        <th><h1>App</h1></th>
+    </tr>
+
+    <tr>
+        <td colspan="2">
+            <div class="projectDiv">
+                {{#App}}
+                    <a href="{{url}}">
+                        <div class="projectDiv-inner">
+                            <h2>{{title}}</h2>
+                            <h5>{{contents}}</h5>
+                        </div>
+                    </a>
+                {{/App}}
+            </div>
+        </td>
     </tr>
     <tr>
-        <th>Etc</th>
-    {{#Etc}}
-        <tr>
-            <td colspan="2"><h3>{{title}}</h3></td>
-        </tr>
-        <tr>
-            <th>요약</th>
-            <td>{{contents}}</td>
-        </tr>
-        <tr>
-            <th>code</th>
-            <td><a href="{{url}}">GitHub</a> </td>
-        </tr>
-    {{/Etc}}
+        <th><h1>Etc</h1></th>
+    </tr>
+
+    <tr>
+        <td colspan="2">
+            <div class="projectDiv">
+                {{#Etc}}
+                    <a href="{{url}}">
+                        <div class="projectDiv-inner">
+                            <h2>{{title}}</h2>
+                            <h5>{{contents}}</h5>
+                        </div>
+                    </a>
+                {{/Etc}}
+            </div>
+        </td>
     </tr>
 </table>
 {{>layout/footer}}
