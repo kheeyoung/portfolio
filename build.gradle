@@ -41,3 +41,9 @@ dependencies {
 tasks.named('test') {
 	useJUnitPlatform()
 }
+
+apply plugin: 'org.springframework.boot'
+
+bootJar {
+    enabled = true
+}
